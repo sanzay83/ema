@@ -1,5 +1,6 @@
 {
-  "name": "ema-form",
+  "name": "ema",
+  "homepage": "https://sanzay83.github.io/ema",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
