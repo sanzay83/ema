@@ -1,0 +1,145 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+}
+
+.container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  width: 96%;
+}
+
+.project-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background-color: #eef2fc;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-info .field {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info .field label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.project-info .field input {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.2s ease;
+}
+
+.project-info .field input:focus {
+  border-color: #007bff;
+  outline: none;
+  background: #fff;
+}
+
+input:invalid {
+  border-color: #dc3545;
+  background-color: #fff0f0;
+}
+
+input:required:valid {
+  border-color: #28a745;
+}
+
+.item-row {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: #eef2fc;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.text-box {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.text-box .field {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-box input,
+.text-box textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+  height: 100px; /* Fixed height for textarea */
+}
+
+.image-box {
+  width: 200px;
+  height: 200px; /* Square shape */
+  border: 2px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Makes image fill the square without distortion */
+}
+
+.button-container {
+  margin-top: 1rem;
+}
+
+.a-button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-button {
+  background-color: #4a90e2;
+}
+
+.add-button:hover {
+  background-color: #357abd;
+}
+
+.submit-button {
+  background-color: #5cb85c;
+}
+
+.submit-button:hover {
+  background-color: #4cae4c;
+}
